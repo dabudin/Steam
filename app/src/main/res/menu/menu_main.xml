@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.azarquiel.steam.view.MainActivity">
+
+    <item android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/action_login_register"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_login"
+        android:title="@string/login_register"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_favoritos"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/star_big_off"
+        android:title="@string/favoritos"
+        app:showAsAction="ifRoom" />
+
+</menu>
